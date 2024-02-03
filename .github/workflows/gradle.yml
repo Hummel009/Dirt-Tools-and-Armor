@@ -30,6 +30,24 @@ jobs:
         with:
           name: current-version
           path: ./${{matrix.version}}/build/libs/*.jar
+      - name: Clear cache
+        uses: actions/github-script@v6
+        with:
+          script: |
+            console.log("About to clear")
+            const caches = await github.rest.actions.getActionsCacheList({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            })
+            for (const cache of caches.data.actions_caches) {
+              console.log(cache)
+              github.rest.actions.deleteActionsCacheById({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                cache_id: cache.id,
+              })
+            }
+            console.log("Clear completed")
   build_forge_archive:
     runs-on: windows-latest
     strategy:
@@ -52,6 +70,24 @@ jobs:
         with:
           name: archive-forge
           path: ./appForgeArchive/${{matrix.version}}/build/libs/*.jar
+      - name: Clear cache
+        uses: actions/github-script@v6
+        with:
+          script: |
+            console.log("About to clear")
+            const caches = await github.rest.actions.getActionsCacheList({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            })
+            for (const cache of caches.data.actions_caches) {
+              console.log(cache)
+              github.rest.actions.deleteActionsCacheById({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                cache_id: cache.id,
+              })
+            }
+            console.log("Clear completed")
   build_forge_archive_legacy:
     runs-on: windows-latest
     strategy:
@@ -74,6 +110,24 @@ jobs:
         with:
           name: archive-forge
           path: ./appForgeArchive/${{matrix.version}}/build/libs/*.jar
+      - name: Clear cache
+        uses: actions/github-script@v6
+        with:
+          script: |
+            console.log("About to clear")
+            const caches = await github.rest.actions.getActionsCacheList({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            })
+            for (const cache of caches.data.actions_caches) {
+              console.log(cache)
+              github.rest.actions.deleteActionsCacheById({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                cache_id: cache.id,
+              })
+            }
+            console.log("Clear completed")
   build_fabric_archive:
     runs-on: windows-latest
     strategy:
@@ -95,11 +149,7 @@ jobs:
         uses: actions/upload-artifact@v3.1.3
         with:
           name: archive-fabric
-          path: ./appFabricArchive/${{matrix.version}}/build/libs/*.jar
-  clear-cache:
-    runs-on: ubuntu-latest
-    needs: [build_repo, build_forge_archive, build_forge_archive_legacy, build_fabric_archive]
-    steps:
+          path: ./appFabricArchive/${{matrix.version}}/build/libs/*.jar=
       - name: Clear cache
         uses: actions/github-script@v6
         with:
