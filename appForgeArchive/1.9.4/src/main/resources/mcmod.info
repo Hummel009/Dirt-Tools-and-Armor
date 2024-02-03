@@ -1,9 +1,9 @@
 [
 	{
 		"modid": "dirtequipment",
-		"name": "Dirt Tools and Armor Mod",
+		"name": "Dirt Tools and Armor",
 		"description": "This mod adds suppa duppa dirt tools and armor to Minecraft!!!",
-		"version": "24.01.28",
+		"version": "24.02.29",
 		"mcversion": "1.9.4",
 		"url": "https://github.com/Hummel009",
 		"authorList": [
