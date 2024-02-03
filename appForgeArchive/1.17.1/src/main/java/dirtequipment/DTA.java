@@ -11,6 +11,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 @Mod("dirtequipment")
 public class DTA {
+	public static final String DISABLE_CURSEFORGE_DUPLICATE_NOTICE = "101129102023";
+
 	private static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "dirtequipment");
 
 	public static final RegistryObject<Item> DIRT_SWORD = ITEMS.register("dirt_sword", DTAItemSword::new);

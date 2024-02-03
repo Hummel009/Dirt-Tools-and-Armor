@@ -9,6 +9,8 @@ import net.minecraft.util.registry.Registry;
 
 @SuppressWarnings("WeakerAccess")
 public class DTA implements ModInitializer {
+	public static final String DISABLE_CURSEFORGE_DUPLICATE_NOTICE = "101129102023";
+
 	public static final Item DIRT_SWORD = new DTAItemSword();
 
 	public static final Item DIRT_HELMET = new DTAItemArmor(EquipmentSlot.HEAD);
