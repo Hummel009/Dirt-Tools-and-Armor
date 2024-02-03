@@ -6,6 +6,6 @@ import net.minecraft.item.ShovelItem;
 
 public class DTAItemShovel extends ShovelItem {
 	public DTAItemShovel() {
-		super(DTAToolMaterials.DIRT, 1.5f, -3.0f, new Properties().tab(ItemGroup.TAB_TOOLS));
+		super(DTAToolMaterials.DIRT, 1.5f, -3.0f, new Item.Properties().tab(ItemGroup.TAB_TOOLS));
 	}
 }

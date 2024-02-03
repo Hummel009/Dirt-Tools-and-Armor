@@ -5,11 +5,12 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 public class DTAItemArmor extends ArmorItem {
 	public DTAItemArmor(EquipmentSlot slot) {
-		super(DTAArmorMaterials.DIRT, slot, new Properties().tab(CreativeModeTab.TAB_COMBAT));
+		super(DTAArmorMaterials.DIRT, slot, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
 	}
 
 	@Override
