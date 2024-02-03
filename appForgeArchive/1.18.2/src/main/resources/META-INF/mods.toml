@@ -1,0 +1,24 @@
+modLoader = "javafml"
+loaderVersion = "[0,)"
+license = "Powered by Hummel009"
+
+[[mods]]
+modId = "dirtequipment"
+version = "24.01.28"
+displayName = "Dirt Tools and Armor Mod"
+authors = "Hummel009"
+description = '''This mod adds suppa duppa dirt tools and armor to Minecraft!!!'''
+
+[[dependencies.dirtequipment]]
+modId = "forge"
+mandatory = true
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.dirtequipment]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2]"
+ordering = "NONE"
+side = "BOTH"
