@@ -10,6 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 @Mod("dirtequipment")
+@SuppressWarnings("WeakerAccess")
 public class DTA {
 	public static final String DISABLE_CURSEFORGE_DUPLICATE_NOTICE = "101129102023";
 
