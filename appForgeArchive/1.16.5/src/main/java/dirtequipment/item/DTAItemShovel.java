@@ -1,6 +1,7 @@
 package dirtequipment.item;
 
 import dirtequipment.material.DTAToolMaterials;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ShovelItem;
 
