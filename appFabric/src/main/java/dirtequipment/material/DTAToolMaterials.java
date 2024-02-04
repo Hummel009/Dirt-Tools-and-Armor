@@ -1,41 +1,41 @@
 package dirtequipment.material;
 
-import net.minecraft.item.Items;
-import net.minecraft.item.ToolMaterial;
-import net.minecraft.recipe.Ingredient;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.Ingredient;
 
-public enum DTAToolMaterials implements ToolMaterial {
-	DIRT(3, 1561, 8.0F, 3.0F, 10, Ingredient.ofItems(Items.DIRT));
+public enum DTAToolMaterials implements Tier {
+	DIRT(3, 1561, 8.0F, 3.0F, 10, Ingredient.of(Items.DIRT));
 
-	private final int miningLevel;
-	private final int durability;
-	private final float miningSpeedMultiplier;
-	private final float attackDamage;
-	private final int enchantability;
+	private final int level;
+	private final int uses;
+	private final float speed;
+	private final float attackDamageBonus;
+	private final int enchantmentValue;
 	private final Ingredient repairIngredient;
 
-	DTAToolMaterials(int miningLevel, int durability, float miningSpeedMultiplier, float attackDamage, int enchantability, Ingredient repairIngredient) {
-		this.miningLevel = miningLevel;
-		this.durability = durability;
-		this.miningSpeedMultiplier = miningSpeedMultiplier;
-		this.attackDamage = attackDamage;
-		this.enchantability = enchantability;
+	DTAToolMaterials(int level, int uses, float speed, float attackDamageBonus, int enchantmentValue, Ingredient repairIngredient) {
+		this.level = level;
+		this.uses = uses;
+		this.speed = speed;
+		this.attackDamageBonus = attackDamageBonus;
+		this.enchantmentValue = enchantmentValue;
 		this.repairIngredient = repairIngredient;
 	}
 
 	@Override
-	public float getAttackDamage() {
-		return attackDamage;
+	public float getAttackDamageBonus() {
+		return attackDamageBonus;
 	}
 
 	@Override
-	public int getEnchantability() {
-		return enchantability;
+	public int getEnchantmentValue() {
+		return enchantmentValue;
 	}
 
 	@Override
-	public int getMiningLevel() {
-		return miningLevel;
+	public int getLevel() {
+		return level;
 	}
 
 	@Override
@@ -44,12 +44,12 @@ public enum DTAToolMaterials implements ToolMaterial {
 	}
 
 	@Override
-	public float getMiningSpeedMultiplier() {
-		return miningSpeedMultiplier;
+	public float getSpeed() {
+		return speed;
 	}
 
 	@Override
-	public int getDurability() {
-		return durability;
+	public int getUses() {
+		return uses;
 	}
 }

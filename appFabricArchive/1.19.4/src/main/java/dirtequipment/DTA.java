@@ -3,12 +3,12 @@ package dirtequipment;
 import dirtequipment.item.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
 
 @SuppressWarnings("WeakerAccess")
 public class DTA implements ModInitializer {
@@ -40,23 +40,23 @@ public class DTA implements ModInitializer {
 		register(DIRT_AXE, "dirt_axe");
 		register(DIRT_HOE, "dirt_hoe");
 
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(content -> {
-			content.add(DIRT_SWORD);
-			content.add(DIRT_HELMET);
-			content.add(DIRT_CHESTPLATE);
-			content.add(DIRT_LEGGINGS);
-			content.add(DIRT_BOOTS);
+		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT).register(content -> {
+			content.accept(DIRT_SWORD);
+			content.accept(DIRT_HELMET);
+			content.accept(DIRT_CHESTPLATE);
+			content.accept(DIRT_LEGGINGS);
+			content.accept(DIRT_BOOTS);
 		});
 
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {
-			content.add(DIRT_SHOVEL);
-			content.add(DIRT_PICKAXE);
-			content.add(DIRT_AXE);
-			content.add(DIRT_HOE);
+		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(content -> {
+			content.accept(DIRT_SHOVEL);
+			content.accept(DIRT_PICKAXE);
+			content.accept(DIRT_AXE);
+			content.accept(DIRT_HOE);
 		});
 	}
 
 	private static void register(Item item, String name) {
-		Registry.register(Registries.ITEM, new Identifier("dirtequipment", name), item);
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation("dirtequipment", name), item);
 	}
 }

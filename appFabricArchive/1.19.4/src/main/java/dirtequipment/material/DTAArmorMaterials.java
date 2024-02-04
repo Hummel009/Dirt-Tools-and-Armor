@@ -1,30 +1,30 @@
 package dirtequipment.material;
 
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Items;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 
 public enum DTAArmorMaterials implements ArmorMaterial {
-	DIRT("dirt", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2.0F, 0, Ingredient.ofItems(Items.DIRT));
+	DIRT("dirt", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_LEATHER, 2.0F, 0, Ingredient.of(Items.DIRT));
 
-	private static final int[] DURABILITY = new int[]{13, 15, 16, 11};
+	private static final int[] DURABILITY_FOR_TYPE = new int[]{13, 15, 16, 11};
 	private final String name;
 	private final int durabilityMultiplier;
-	private final int[] protection;
-	private final int enchantability;
+	private final int[] defenseForType;
+	private final int enchantmentValue;
 	private final SoundEvent equipSound;
 	private final float toughness;
 	private final Ingredient repairIngredient;
 	private final float knockbackResistance;
 
-	DTAArmorMaterials(String name, int durabilityMultiplier, int[] protection, int enchantability, SoundEvent equipSound, float toughness, float knockbackResistance, Ingredient repairIngredient) {
+	DTAArmorMaterials(String name, int durabilityMultiplier, int[] defenseForType, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Ingredient repairIngredient) {
 		this.name = name;
 		this.durabilityMultiplier = durabilityMultiplier;
-		this.protection = protection;
-		this.enchantability = enchantability;
+		this.defenseForType = defenseForType;
+		this.enchantmentValue = enchantmentValue;
 		this.equipSound = equipSound;
 		this.toughness = toughness;
 		this.knockbackResistance = knockbackResistance;
@@ -32,18 +32,18 @@ public enum DTAArmorMaterials implements ArmorMaterial {
 	}
 
 	@Override
-	public int getProtection(ArmorItem.Type type) {
-		return protection[type.getEquipmentSlot().getEntitySlotId()];
+	public int getDefenseForType(ArmorItem.Type type) {
+		return defenseForType[type.getSlot().getIndex()];
 	}
 
 	@Override
-	public int getDurability(ArmorItem.Type type) {
-		return DURABILITY[type.getEquipmentSlot().getEntitySlotId()] * durabilityMultiplier;
+	public int getDurabilityForType(ArmorItem.Type type) {
+		return DURABILITY_FOR_TYPE[type.getSlot().getIndex()] * durabilityMultiplier;
 	}
 
 	@Override
-	public int getEnchantability() {
-		return enchantability;
+	public int getEnchantmentValue() {
+		return enchantmentValue;
 	}
 
 	@Override
