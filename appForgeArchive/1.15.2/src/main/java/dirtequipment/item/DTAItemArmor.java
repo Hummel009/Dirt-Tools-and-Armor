@@ -4,13 +4,12 @@ import dirtequipment.material.DTAArmorMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
 public class DTAItemArmor extends ArmorItem {
 	public DTAItemArmor(EquipmentSlotType slotType) {
-		super(DTAArmorMaterials.DIRT, slotType, new Item.Properties().tab(ItemGroup.TAB_COMBAT));
+		super(DTAArmorMaterials.DIRT, slotType, new Properties().tab(ItemGroup.TAB_COMBAT));
 	}
 
 	@Override

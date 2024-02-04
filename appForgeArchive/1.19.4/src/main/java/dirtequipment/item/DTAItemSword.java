@@ -6,6 +6,6 @@ import net.minecraft.world.item.SwordItem;
 
 public class DTAItemSword extends SwordItem {
 	public DTAItemSword() {
-		super(DTAToolMaterials.DIRT, 3, -2.4f, new Item.Properties());
+		super(DTAToolMaterials.DIRT, 3, -2.4f, new Properties());
 	}
 }

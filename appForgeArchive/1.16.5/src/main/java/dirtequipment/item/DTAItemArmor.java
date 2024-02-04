@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 
 public class DTAItemArmor extends ArmorItem {
 	public DTAItemArmor(EquipmentSlotType slotType) {
-		super(DTAArmorMaterials.DIRT, slotType, new Item.Properties().tab(ItemGroup.TAB_COMBAT));
+		super(DTAArmorMaterials.DIRT, slotType, new Properties().tab(ItemGroup.TAB_COMBAT));
 	}
 
 	@Override

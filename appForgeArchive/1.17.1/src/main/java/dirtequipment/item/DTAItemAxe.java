@@ -7,6 +7,6 @@ import net.minecraft.world.item.Item;
 
 public class DTAItemAxe extends AxeItem {
 	public DTAItemAxe() {
-		super(DTAToolMaterials.DIRT, 5.0f, -3.0f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS));
+		super(DTAToolMaterials.DIRT, 5.0f, -3.0f, new Properties().tab(CreativeModeTab.TAB_TOOLS));
 	}
 }

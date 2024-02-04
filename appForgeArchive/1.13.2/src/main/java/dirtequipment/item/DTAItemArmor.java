@@ -3,14 +3,13 @@ package dirtequipment.item;
 import dirtequipment.material.DTAArmorMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
 public class DTAItemArmor extends ItemArmor {
 	public DTAItemArmor(EntityEquipmentSlot equipmentSlot) {
-		super(DTAArmorMaterials.DIRT, equipmentSlot, new Item.Properties().group(ItemGroup.COMBAT));
+		super(DTAArmorMaterials.DIRT, equipmentSlot, new Properties().group(ItemGroup.COMBAT));
 	}
 
 	@Override
