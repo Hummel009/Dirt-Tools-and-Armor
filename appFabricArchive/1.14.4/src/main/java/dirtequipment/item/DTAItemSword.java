@@ -1,11 +1,10 @@
 package dirtequipment.item;
 
 import dirtequipment.material.DTAToolMaterials;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.SwordItem;
+import net.minecraft.world.item.SwordItem;
 
 public class DTAItemSword extends SwordItem {
 	public DTAItemSword() {
-		super(DTAToolMaterials.DIRT, 3, -2.4f, new Settings().group(ItemGroup.COMBAT));
+		super(DTAToolMaterials.DIRT, 3, -2.4f, new Properties());
 	}
 }

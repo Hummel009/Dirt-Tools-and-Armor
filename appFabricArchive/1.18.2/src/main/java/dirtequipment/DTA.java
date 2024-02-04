@@ -2,10 +2,10 @@ package dirtequipment;
 
 import dirtequipment.item.*;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.Item;
 
 @SuppressWarnings("WeakerAccess")
 public class DTA implements ModInitializer {
@@ -23,6 +23,10 @@ public class DTA implements ModInitializer {
 	public static final Item DIRT_AXE = new DTAItemAxe();
 	public static final Item DIRT_HOE = new DTAItemHoe();
 
+	private static void register(Item item, String name) {
+		Registry.register(Registry.ITEM, new ResourceLocation("dirtequipment", name), item);
+	}
+
 	@Override
 	public void onInitialize() {
 		register(DIRT_SWORD, "dirt_sword");
@@ -36,9 +40,5 @@ public class DTA implements ModInitializer {
 		register(DIRT_PICKAXE, "dirt_pickaxe");
 		register(DIRT_AXE, "dirt_axe");
 		register(DIRT_HOE, "dirt_hoe");
-	}
-
-	private static void register(Item item, String name) {
-		Registry.register(Registry.ITEM, new Identifier("dirtequipment", name), item);
 	}
 }
