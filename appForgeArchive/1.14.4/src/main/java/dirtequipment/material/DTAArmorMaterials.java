@@ -51,8 +51,8 @@ public enum DTAArmorMaterials implements IArmorMaterial {
 		return equipSound;
 	}
 
-	@OnlyIn(Dist.CLIENT)
 	@Override
+	@OnlyIn(Dist.CLIENT)
 	public String getName() {
 		return name;
 	}

@@ -6,8 +6,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
 public enum DTAArmorMaterials implements ArmorMaterial {
 	DIRT("dirt", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_LEATHER, 2.0F, 0, Ingredient.of(Items.DIRT));
@@ -58,7 +56,6 @@ public enum DTAArmorMaterials implements ArmorMaterial {
 		return knockbackResistance;
 	}
 
-	@OnlyIn(Dist.CLIENT)
 	@Override
 	public String getName() {
 		return name;

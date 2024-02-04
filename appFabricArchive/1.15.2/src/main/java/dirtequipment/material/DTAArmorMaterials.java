@@ -1,5 +1,7 @@
 package dirtequipment.material;
 
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -50,6 +52,7 @@ public enum DTAArmorMaterials implements ArmorMaterial {
 	}
 
 	@Override
+	@Environment(EnvType.CLIENT)
 	public String getName() {
 		return name;
 	}
