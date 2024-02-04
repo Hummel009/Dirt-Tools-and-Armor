@@ -26,6 +26,10 @@ public class DTA implements ModInitializer {
 	public static final Item DIRT_AXE = new DTAItemAxe();
 	public static final Item DIRT_HOE = new DTAItemHoe();
 
+	private static void register(Item item, String name) {
+		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation("dirtequipment", name), item);
+	}
+
 	@Override
 	public void onInitialize() {
 		register(DIRT_SWORD, "dirt_sword");
@@ -54,9 +58,5 @@ public class DTA implements ModInitializer {
 			content.accept(DIRT_AXE);
 			content.accept(DIRT_HOE);
 		});
-	}
-
-	private static void register(Item item, String name) {
-		Registry.register(BuiltInRegistries.ITEM, new ResourceLocation("dirtequipment", name), item);
 	}
 }
