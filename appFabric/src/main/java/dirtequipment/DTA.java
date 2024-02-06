@@ -44,19 +44,19 @@ public class DTA implements ModInitializer {
 		register(DIRT_AXE, "dirt_axe");
 		register(DIRT_HOE, "dirt_hoe");
 
-		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT).register(content -> {
-			content.accept(DIRT_SWORD);
-			content.accept(DIRT_HELMET);
-			content.accept(DIRT_CHESTPLATE);
-			content.accept(DIRT_LEGGINGS);
-			content.accept(DIRT_BOOTS);
+		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT).register(populator -> {
+			populator.accept(DIRT_SWORD);
+			populator.accept(DIRT_HELMET);
+			populator.accept(DIRT_CHESTPLATE);
+			populator.accept(DIRT_LEGGINGS);
+			populator.accept(DIRT_BOOTS);
 		});
 
-		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(content -> {
-			content.accept(DIRT_SHOVEL);
-			content.accept(DIRT_PICKAXE);
-			content.accept(DIRT_AXE);
-			content.accept(DIRT_HOE);
+		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.TOOLS_AND_UTILITIES).register(populator -> {
+			populator.accept(DIRT_SHOVEL);
+			populator.accept(DIRT_PICKAXE);
+			populator.accept(DIRT_AXE);
+			populator.accept(DIRT_HOE);
 		});
 	}
 }
