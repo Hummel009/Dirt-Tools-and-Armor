@@ -31,7 +31,7 @@ public class DTA {
 
 	private static void register(Item item, String name) {
 		String itemName = CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, name);
-		item.setTextureFile("/assets/dirtequipment/textures/items.png");
+		item.setTextureFile("/textures/items/sprite.png");
 		item.setItemName(itemName);
 	}
 
@@ -84,9 +84,9 @@ public class DTA {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(dirtAxe), "DD", "D/", " /", 'D', Block.dirt, '/', Item.stick));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(dirtHoe), "DD", " /", " /", 'D', Block.dirt, '/', Item.stick));
 
-		DTALang.loadLocalization(LanguageRegistry.instance(), "/assets/dirtequipment/lang/en_US.lang", "en_US");
-		DTALang.loadLocalization(LanguageRegistry.instance(), "/assets/dirtequipment/lang/ru_RU.lang", "ru_RU");
-		DTALang.loadLocalization(LanguageRegistry.instance(), "/assets/dirtequipment/lang/uk_UA.lang", "uk_UA");
+		DTALang.loadLocalization(LanguageRegistry.instance(), "/lang/en_US.lang", "en_US");
+		DTALang.loadLocalization(LanguageRegistry.instance(), "/lang/ru_RU.lang", "ru_RU");
+		DTALang.loadLocalization(LanguageRegistry.instance(), "/lang/uk_UA.lang", "uk_UA");
 	}
 
 	@Mod.PreInit

@@ -8,17 +8,21 @@ import java.util.logging.Level;
 
 @SuppressWarnings("PublicField")
 public class DTAConfig {
+	private static Configuration configuration;
+
+	private static boolean loaded;
+
 	public static int idDirtSword;
+
 	public static int idDirtHelmet;
 	public static int idDirtChestplate;
 	public static int idDirtLeggings;
 	public static int idDirtBoots;
+
 	public static int idDirtShovel;
 	public static int idDirtPickaxe;
 	public static int idDirtAxe;
 	public static int idDirtHoe;
-	private static Configuration configuration;
-	private static boolean loaded;
 
 	private DTAConfig() {
 	}

@@ -73,9 +73,9 @@ public class DTA {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(dirtAxe), "DD", "D/", " /", 'D', Block.dirt, '/', Item.stick));
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(dirtHoe), "DD", " /", " /", 'D', Block.dirt, '/', Item.stick));
 
-		LanguageRegistry.instance().loadLocalization("/assets/dirtequipment/lang/en_US.lang", "en_US", false);
-		LanguageRegistry.instance().loadLocalization("/assets/dirtequipment/lang/ru_RU.lang", "ru_RU", false);
-		LanguageRegistry.instance().loadLocalization("/assets/dirtequipment/lang/uk_UA.lang", "uk_UA", false);
+		LanguageRegistry.instance().loadLocalization("/lang/en_US.lang", "en_US", false);
+		LanguageRegistry.instance().loadLocalization("/lang/ru_RU.lang", "ru_RU", false);
+		LanguageRegistry.instance().loadLocalization("/lang/uk_UA.lang", "uk_UA", false);
 	}
 
 	@Mod.PreInit
