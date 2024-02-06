@@ -1,6 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[0,)"
 license = "Powered by Hummel009"
+logoFile = "logo.png"
 
 [[mods]]
 modId = "dirtequipment"
