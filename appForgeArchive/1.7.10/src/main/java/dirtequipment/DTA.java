@@ -30,8 +30,8 @@ public class DTA {
 
 	private static void register(Item item, String name) {
 		String itemName = CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, name);
-		item.setTextureName("dirtequipment:" + itemName);
 		item.setUnlocalizedName(itemName);
+		item.setTextureName("dirtequipment:" + itemName);
 		GameRegistry.registerItem(item, itemName);
 	}
 
