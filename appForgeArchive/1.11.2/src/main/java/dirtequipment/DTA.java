@@ -92,10 +92,10 @@ public class DTA {
 		@SideOnly(Side.CLIENT)
 		public static void onModelRegistry(ModelRegistryEvent event) {
 			for (Item item : CONTENT) {
-				ResourceLocation itemName = item.getRegistryName();
-				ModelResourceLocation model = new ModelResourceLocation(itemName, "inventory");
-				ModelBakery.registerItemVariants(item, model);
-				ModelLoader.setCustomModelResourceLocation(item, 0, model);
+				ResourceLocation resourceLocation = item.getRegistryName();
+				ModelResourceLocation modelResourceLocation = new ModelResourceLocation(resourceLocation, "inventory");
+				ModelBakery.registerItemVariants(item, modelResourceLocation);
+				ModelLoader.setCustomModelResourceLocation(item, 0, modelResourceLocation);
 			}
 		}
 
