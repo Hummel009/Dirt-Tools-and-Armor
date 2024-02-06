@@ -13,7 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 @Mod("dirtequipment")
 @SuppressWarnings("WeakerAccess")
 public class DTA {
-	public static final String DISABLE_CURSEFORGE_DUPLICATE_NOTICE = "101129102023";
+	public static final String DISABLE_CURSEFORGE_DUPLICATE_NOTICE = "131829122023";
 
 	private static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, "dirtequipment");
 

@@ -21,7 +21,7 @@ import java.util.Collection;
 @SuppressWarnings({"WeakerAccess", "PublicField"})
 @Mod(modid = "dirtequipment", useMetadata = true)
 public class DTA {
-	public static final String DISABLE_CURSEFORGE_DUPLICATE_NOTICE = "101129102023";
+	public static final String DISABLE_CURSEFORGE_DUPLICATE_NOTICE = "131829122023";
 
 	public static final Collection<Item> CONTENT = new ArrayList<>();
 
