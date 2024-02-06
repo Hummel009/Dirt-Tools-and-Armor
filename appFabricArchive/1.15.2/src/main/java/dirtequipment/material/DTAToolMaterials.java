@@ -5,7 +5,7 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
 
 public enum DTAToolMaterials implements Tier {
-	DIRT(3, 1561, 8.0F, 3.0F, 10, Ingredient.of(Items.DIRT));
+	DIRT(3, 1561, 8.0f, 3.0f, 10, Ingredient.of(Items.DIRT));
 
 	private final int level;
 	private final int uses;

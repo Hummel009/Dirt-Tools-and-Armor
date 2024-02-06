@@ -5,7 +5,7 @@ import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
 public enum DTAToolMaterials implements IItemTier {
-	DIRT(3, 1561, 8.0F, 3.0F, 10, Ingredient.fromItems(Blocks.DIRT));
+	DIRT(3, 1561, 8.0f, 3.0f, 10, Ingredient.fromItems(Blocks.DIRT));
 
 	private final int harvestLevel;
 	private final int maxUses;

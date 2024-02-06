@@ -10,7 +10,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public enum DTAArmorMaterials implements IArmorMaterial {
-	DIRT("dirt", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_LEATHER, 2.0F, 0, Ingredient.of(Items.DIRT));
+	DIRT("dirt", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_LEATHER, 2.0f, 0, Ingredient.of(Items.DIRT));
 
 	private static final int[] DURABILITY_FOR_SLOT = new int[]{13, 15, 16, 11};
 	private final String name;
