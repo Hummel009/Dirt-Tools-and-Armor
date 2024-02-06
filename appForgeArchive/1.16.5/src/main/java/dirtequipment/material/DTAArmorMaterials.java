@@ -34,13 +34,13 @@ public enum DTAArmorMaterials implements IArmorMaterial {
 	}
 
 	@Override
-	public int getDefenseForSlot(EquipmentSlotType slotType) {
-		return defenseForSlot[slotType.getIndex()];
+	public int getDefenseForSlot(EquipmentSlotType equipmentSlotType) {
+		return defenseForSlot[equipmentSlotType.getIndex()];
 	}
 
 	@Override
-	public int getDurabilityForSlot(EquipmentSlotType slotType) {
-		return DURABILITY_FOR_SLOT[slotType.getIndex()] * durabilityMultiplier;
+	public int getDurabilityForSlot(EquipmentSlotType equipmentSlotType) {
+		return DURABILITY_FOR_SLOT[equipmentSlotType.getIndex()] * durabilityMultiplier;
 	}
 
 	@Override

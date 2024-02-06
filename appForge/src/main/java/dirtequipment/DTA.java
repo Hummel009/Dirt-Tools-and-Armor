@@ -29,8 +29,8 @@ public class DTA {
 	public static final RegistryObject<Item> DIRT_HOE = ITEMS.register("dirt_hoe", DTAItemHoe::new);
 
 	public DTA() {
-		var fmlBus = FMLJavaModLoadingContext.get().getModEventBus();
-		fmlBus.addListener(DTACreativeTabs::addCreativeTab);
-		ITEMS.register(fmlBus);
+		var eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+		eventBus.addListener(DTACreativeTabs::addCreativeTab);
+		ITEMS.register(eventBus);
 	}
 }

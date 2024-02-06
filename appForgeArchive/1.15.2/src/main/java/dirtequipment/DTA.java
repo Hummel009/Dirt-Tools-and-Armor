@@ -30,7 +30,7 @@ public class DTA {
 	public static final RegistryObject<Item> DIRT_HOE = ITEMS.register("dirt_hoe", DTAItemHoe::new);
 
 	public DTA() {
-		IEventBus fmlBus = FMLJavaModLoadingContext.get().getModEventBus();
-		ITEMS.register(fmlBus);
+		IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+		ITEMS.register(eventBus);
 	}
 }
