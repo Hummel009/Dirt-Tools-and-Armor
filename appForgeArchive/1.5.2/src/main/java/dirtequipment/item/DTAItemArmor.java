@@ -14,6 +14,6 @@ public class DTAItemArmor extends ItemArmor {
 
 	@Override
 	public String getArmorTexture(ItemStack itemStack, Entity entity, int slot, int layer) {
-		return "/textures/models/armor/dirt_layer_" + (slot == 2 ? 2 : 1) + ".png";
+		return "/assets/dirtequipment/textures/models/armor/dirt_layer_" + (slot == 2 ? 2 : 1) + ".png";
 	}
 }
