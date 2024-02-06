@@ -1,11 +1,11 @@
 package dirtequipment.material;
 
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.block.Blocks;
 
 public enum DTAToolMaterials implements Tier {
-	DIRT(3, 1561, 8.0f, 3.0f, 10, Ingredient.of(Items.DIRT));
+	DIRT(3, 1561, 8.0f, 3.0f, 10, Ingredient.of(Blocks.DIRT));
 
 	private final int level;
 	private final int uses;
