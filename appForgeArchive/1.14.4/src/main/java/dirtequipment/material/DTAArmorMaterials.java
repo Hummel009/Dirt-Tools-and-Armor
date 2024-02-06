@@ -1,8 +1,8 @@
 package dirtequipment.material;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
@@ -10,7 +10,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public enum DTAArmorMaterials implements IArmorMaterial {
-	DIRT("dirt", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_LEATHER, 2.0f, Ingredient.of(Items.DIRT));
+	DIRT("dirt", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_LEATHER, 2.0f, Ingredient.of(Blocks.DIRT));
 
 	private static final int[] DURABILITY_FOR_SLOT = new int[]{13, 15, 16, 11};
 	private final String name;
@@ -32,13 +32,13 @@ public enum DTAArmorMaterials implements IArmorMaterial {
 	}
 
 	@Override
-	public int getDefenseForSlot(EquipmentSlotType slotType) {
-		return defenseForSlot[slotType.getIndex()];
+	public int getDefenseForSlot(EquipmentSlotType equipmentSlotType) {
+		return defenseForSlot[equipmentSlotType.getIndex()];
 	}
 
 	@Override
-	public int getDurabilityForSlot(EquipmentSlotType slotType) {
-		return DURABILITY_FOR_SLOT[slotType.getIndex()] * durabilityMultiplier;
+	public int getDurabilityForSlot(EquipmentSlotType equipmentSlotType) {
+		return DURABILITY_FOR_SLOT[equipmentSlotType.getIndex()] * durabilityMultiplier;
 	}
 
 	@Override
