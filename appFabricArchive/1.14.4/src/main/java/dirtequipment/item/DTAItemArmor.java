@@ -6,7 +6,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.CreativeModeTab;
 
 public class DTAItemArmor extends ArmorItem {
-	public DTAItemArmor(EquipmentSlot type) {
-		super(DTAArmorMaterials.DIRT, type, new Properties().tab(CreativeModeTab.TAB_COMBAT));
+	public DTAItemArmor(EquipmentSlot equipmentSlot) {
+		super(DTAArmorMaterials.DIRT, equipmentSlot, new Properties().tab(CreativeModeTab.TAB_COMBAT));
 	}
 }
