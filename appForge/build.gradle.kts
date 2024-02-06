@@ -2,14 +2,14 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 
 plugins {
-	id("net.minecraftforge.gradle")
+	id("net.minecraftforge.gradle") version "[6.0.16,6.2)"
 }
 
 group = "hummel"
 version = "v" + LocalDate.now().format(DateTimeFormatter.ofPattern("yy.MM.dd"))
 
 dependencies {
-	minecraft("net.minecraftforge:forge:1.20.4-49.0.12")
+	minecraft("net.minecraftforge:forge:1.20.4-49.0.27")
 }
 
 java {
