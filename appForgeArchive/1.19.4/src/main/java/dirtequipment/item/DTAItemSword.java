@@ -1,7 +1,6 @@
 package dirtequipment.item;
 
 import dirtequipment.material.DTAToolMaterials;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 
 public class DTAItemSword extends SwordItem {

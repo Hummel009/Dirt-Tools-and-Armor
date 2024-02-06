@@ -2,7 +2,6 @@ package dirtequipment.item;
 
 import dirtequipment.material.DTAToolMaterials;
 import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.item.Item;
 
 public class DTAItemHoe extends HoeItem {
 	public DTAItemHoe() {

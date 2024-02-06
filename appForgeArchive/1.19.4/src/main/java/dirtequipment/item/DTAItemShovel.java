@@ -1,7 +1,6 @@
 package dirtequipment.item;
 
 import dirtequipment.material.DTAToolMaterials;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ShovelItem;
 
 public class DTAItemShovel extends ShovelItem {
