@@ -29,6 +29,11 @@ public enum DTAToolMaterials implements IItemTier {
 	}
 
 	@Override
+	public float getEfficiency() {
+		return efficiency;
+	}
+
+	@Override
 	public int getEnchantability() {
 		return enchantability;
 	}
@@ -39,17 +44,12 @@ public enum DTAToolMaterials implements IItemTier {
 	}
 
 	@Override
-	public Ingredient getRepairMaterial() {
-		return repairMaterial;
-	}
-
-	@Override
-	public float getEfficiency() {
-		return efficiency;
-	}
-
-	@Override
 	public int getMaxUses() {
 		return maxUses;
+	}
+
+	@Override
+	public Ingredient getRepairMaterial() {
+		return repairMaterial;
 	}
 }

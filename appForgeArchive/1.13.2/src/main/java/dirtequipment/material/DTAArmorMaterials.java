@@ -32,23 +32,18 @@ public enum DTAArmorMaterials implements IArmorMaterial {
 	}
 
 	@Override
-	public int getDamageReductionAmount(EntityEquipmentSlot slot) {
-		return damageReductionAmount[slot.getIndex()];
+	public int getDamageReductionAmount(EntityEquipmentSlot entityEquipmentSlot) {
+		return damageReductionAmount[entityEquipmentSlot.getIndex()];
 	}
 
 	@Override
-	public int getDurability(EntityEquipmentSlot slot) {
-		return DURABILITY[slot.getIndex()] * maxDamageFactor;
+	public int getDurability(EntityEquipmentSlot entityEquipmentSlot) {
+		return DURABILITY[entityEquipmentSlot.getIndex()] * maxDamageFactor;
 	}
 
 	@Override
 	public int getEnchantability() {
 		return enchantability;
-	}
-
-	@Override
-	public SoundEvent getSoundEvent() {
-		return soundEvent;
 	}
 
 	@Override
@@ -60,6 +55,11 @@ public enum DTAArmorMaterials implements IArmorMaterial {
 	@Override
 	public Ingredient getRepairMaterial() {
 		return repairMaterial;
+	}
+
+	@Override
+	public SoundEvent getSoundEvent() {
+		return soundEvent;
 	}
 
 	@Override
