@@ -13,10 +13,10 @@ public class DTAClientProxy extends DTACommonProxy {
 	@SideOnly(Side.CLIENT)
 	public void onInit() {
 		for (Item item : DTA.CONTENT) {
-			String itemName = item.getRegistryName();
-			ModelResourceLocation model = new ModelResourceLocation(itemName, "inventory");
-			ModelBakery.registerItemVariants(item, model);
-			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, model);
+			String registryName = item.getRegistryName();
+			ModelResourceLocation modelResourceLocation = new ModelResourceLocation(registryName, "inventory");
+			ModelBakery.registerItemVariants(item, modelResourceLocation);
+			Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, modelResourceLocation);
 		}
 	}
 }
