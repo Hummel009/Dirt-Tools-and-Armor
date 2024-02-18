@@ -24,7 +24,7 @@ public class DTA {
 
 	public static final Collection<Item> CONTENT = new ArrayList<>();
 
-	@SidedProxy(serverSide = "dirtequipment.proxy.DTACommonProxy", clientSide = "dirtequipment.proxy.DTAClientProxy")
+	@SidedProxy(serverSide = "com.github.hummel.dirtequipment.proxy.DTACommonProxy", clientSide = "com.github.hummel.dirtequipment.proxy.DTAClientProxy")
 	public static DTACommonProxy proxy;
 
 	public static Item dirtSword;

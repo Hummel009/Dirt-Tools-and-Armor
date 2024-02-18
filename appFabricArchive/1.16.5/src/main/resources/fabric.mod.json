@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"dirtequipment.DTA"
+			"com.github.hummel.dirtequipment.DTA"
 		]
 	},
 	"depends": {
