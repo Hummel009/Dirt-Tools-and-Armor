@@ -1,15 +1,15 @@
 package com.github.hummel.dirtequipment.item;
 
-import com.github.hummel.dirtequipment.material.DTAArmorMaterials;
+import com.github.hummel.dirtequipment.material.ArmorMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 
-public class DTAItemArmor extends ArmorItem {
-	public DTAItemArmor(EquipmentSlotType equipmentSlotType) {
-		super(DTAArmorMaterials.DIRT, equipmentSlotType, new Properties().tab(ItemGroup.TAB_COMBAT));
+public class ItemDirtArmor extends ArmorItem {
+	public ItemDirtArmor(EquipmentSlotType equipmentSlotType) {
+		super(ArmorMaterials.DIRT, equipmentSlotType, new Properties().tab(ItemGroup.TAB_COMBAT));
 	}
 
 	@Override
