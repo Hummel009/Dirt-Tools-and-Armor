@@ -4,7 +4,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
-public enum DTAToolMaterials implements IItemTier {
+public enum ToolMaterials implements IItemTier {
 	DIRT(3, 1561, 8.0f, 3.0f, 10, Ingredient.fromItems(Blocks.DIRT));
 
 	private final int harvestLevel;
@@ -14,7 +14,7 @@ public enum DTAToolMaterials implements IItemTier {
 	private final int enchantability;
 	private final Ingredient repairMaterial;
 
-	DTAToolMaterials(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, Ingredient repairMaterial) {
+	ToolMaterials(int harvestLevel, int maxUses, float efficiency, float attackDamage, int enchantability, Ingredient repairMaterial) {
 		this.harvestLevel = harvestLevel;
 		this.maxUses = maxUses;
 		this.efficiency = efficiency;

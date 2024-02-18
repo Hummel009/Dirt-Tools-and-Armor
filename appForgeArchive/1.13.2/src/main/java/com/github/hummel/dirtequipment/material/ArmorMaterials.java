@@ -6,10 +6,8 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.SoundEvent;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
-public enum DTAArmorMaterials implements IArmorMaterial {
+public enum ArmorMaterials implements IArmorMaterial {
 	DIRT("dirt", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2.0f, Ingredient.fromItems(Blocks.DIRT));
 
 	private static final int[] DURABILITY = new int[]{13, 15, 16, 11};
@@ -21,7 +19,7 @@ public enum DTAArmorMaterials implements IArmorMaterial {
 	private final float toughness;
 	private final Ingredient repairMaterial;
 
-	DTAArmorMaterials(String name, int maxDamageFactor, int[] damageReductionAmount, int enchantability, SoundEvent soundEvent, float toughness, Ingredient repairMaterial) {
+	ArmorMaterials(String name, int maxDamageFactor, int[] damageReductionAmount, int enchantability, SoundEvent soundEvent, float toughness, Ingredient repairMaterial) {
 		this.name = name;
 		this.maxDamageFactor = maxDamageFactor;
 		this.damageReductionAmount = damageReductionAmount;
@@ -47,7 +45,6 @@ public enum DTAArmorMaterials implements IArmorMaterial {
 	}
 
 	@Override
-	@OnlyIn(Dist.CLIENT)
 	public String getName() {
 		return name;
 	}
