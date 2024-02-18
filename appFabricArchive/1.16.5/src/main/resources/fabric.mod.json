@@ -3,7 +3,7 @@
 	"id": "dirtequipment",
 	"version": "24.02.29",
 	"name": "Dirt Tools and Armor",
-	"description": "This mod adds suppa duppa dirt tools and armor to Minecraft!!!",
+	"description": "This mod adds a set of tools and armor made from dirt.",
 	"authors": [
 		"Hummel009"
 	],
@@ -11,7 +11,7 @@
 		"homepage": "https://github.com/Hummel009",
 		"sources": "https://github.com/Hummel009"
 	},
-	"license": "GPL-3.0",
+	"license": "GPL-3.0-only",
 	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {

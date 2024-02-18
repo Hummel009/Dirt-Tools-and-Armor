@@ -2,7 +2,7 @@
 	{
 		"modid": "dirtequipment",
 		"name": "Dirt Tools and Armor",
-		"description": "This mod adds suppa duppa dirt tools and armor to Minecraft!!!",
+		"description": "This mod adds a set of tools and armor made from dirt.",
 		"version": "24.02.29",
 		"mcversion": "1.4.7",
 		"logoFile": "/assets/dirtequipment/textures/logo.png",

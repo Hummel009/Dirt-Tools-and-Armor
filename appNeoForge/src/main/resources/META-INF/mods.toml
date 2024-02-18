@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[0,)"
-license = "Powered by Hummel009"
+license = "GPL-3.0-only"
 logoFile = "logo.png"
 
 [[mods]]
@@ -8,7 +8,7 @@ modId = "dirtequipment"
 version = "24.02.29"
 displayName = "Dirt Tools and Armor"
 authors = "Hummel009"
-description = '''This mod adds suppa duppa dirt tools and armor to Minecraft!!!'''
+description = '''This mod adds a set of tools and armor made from dirt.'''
 
 [[dependencies.dirtequipment]]
 modId = "neoforge"
