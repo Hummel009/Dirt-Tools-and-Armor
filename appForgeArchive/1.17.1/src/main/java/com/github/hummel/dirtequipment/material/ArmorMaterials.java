@@ -7,7 +7,7 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Blocks;
 
-public enum DTAArmorMaterials implements ArmorMaterial {
+public enum ArmorMaterials implements ArmorMaterial {
 	DIRT("dirt", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ARMOR_EQUIP_LEATHER, 2.0f, 0, Ingredient.of(Blocks.DIRT));
 
 	private static final int[] DURABILITY_FOR_SLOT = new int[]{13, 15, 16, 11};
@@ -20,7 +20,7 @@ public enum DTAArmorMaterials implements ArmorMaterial {
 	private final Ingredient repairIngredient;
 	private final float knockbackResistance;
 
-	DTAArmorMaterials(String name, int durabilityMultiplier, int[] defenseForSlot, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Ingredient repairIngredient) {
+	ArmorMaterials(String name, int durabilityMultiplier, int[] defenseForSlot, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Ingredient repairIngredient) {
 		this.name = name;
 		this.durabilityMultiplier = durabilityMultiplier;
 		this.defenseForSlot = defenseForSlot;
