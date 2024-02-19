@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class Main {
 	public static final String DISABLE_CURSEFORGE_DUPLICATE_NOTICE = "131829122023";
 
-	@SidedProxy(clientSide = "com.github.hummel.dirtequipment.proxy.ClientProxy", serverSide = "com.github.hummel.dirtequipment.proxy.CommonProxy")
+	@SidedProxy(clientSide = "com.github.hummel.dirtequipment.proxy.ClientProxy", serverSide = "com.github.hummel.dirtequipment.proxy.ServerProxy")
 	public static CommonProxy proxy;
 
 	@Mod.EventHandler
