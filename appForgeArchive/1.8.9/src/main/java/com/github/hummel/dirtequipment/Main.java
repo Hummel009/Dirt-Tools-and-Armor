@@ -1,6 +1,7 @@
 package com.github.hummel.dirtequipment;
 
 import com.github.hummel.dirtequipment.init.Items;
+import com.github.hummel.dirtequipment.init.Recipes;
 import com.github.hummel.dirtequipment.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -18,6 +19,7 @@ public class Main {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		Items.preInit();
+		Recipes.preInit();
 	}
 
 	@Mod.EventHandler

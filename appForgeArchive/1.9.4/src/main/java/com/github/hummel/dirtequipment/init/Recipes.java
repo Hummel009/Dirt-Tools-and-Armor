@@ -13,7 +13,7 @@ public class Recipes {
 	private Recipes() {
 	}
 
-	public static void register() {
+	public static void preInit() {
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(dirtSword), "D", "D", "/", 'D', Blocks.DIRT, '/', Items.STICK));
 
 		GameRegistry.addRecipe(new ItemStack(dirtHelmet), "DDD", "D D", 'D', Blocks.DIRT);
