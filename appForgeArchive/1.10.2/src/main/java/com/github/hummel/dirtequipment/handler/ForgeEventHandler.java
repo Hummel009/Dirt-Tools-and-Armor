@@ -21,7 +21,7 @@ public class ForgeEventHandler {
 
 	@SubscribeEvent
 	@SideOnly(Side.CLIENT)
-	public static void onModelRegistry(ModelRegistryEvent event) {
+	public void onModelRegistry(ModelRegistryEvent event) {
 		for (Item item : Items.CONTENT) {
 			String registryName = item.getRegistryName().toString();
 			ModelResourceLocation modelResourceLocation = new ModelResourceLocation(registryName, "inventory");

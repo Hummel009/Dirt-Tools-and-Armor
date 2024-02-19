@@ -1,6 +1,7 @@
 package com.github.hummel.dirtequipment.handler;
 
 import com.github.hummel.dirtequipment.init.Items;
+import com.github.hummel.dirtequipment.init.Recipes;
 import net.minecraft.client.renderer.block.model.ModelBakery;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -15,11 +16,12 @@ public class ForgeEventHandler {
 	@SubscribeEvent
 	public void onItemRegistry(RegistryEvent.Register<Item> event) {
 		Items.register();
+		Recipes.register();
 	}
 
 	@SubscribeEvent
 	@SideOnly(Side.CLIENT)
-	public static void onModelRegistry(ModelRegistryEvent event) {
+	public void onModelRegistry(ModelRegistryEvent event) {
 		for (Item item : Items.CONTENT) {
 			String registryName = item.getRegistryName().toString();
 			ModelResourceLocation modelResourceLocation = new ModelResourceLocation(registryName, "inventory");

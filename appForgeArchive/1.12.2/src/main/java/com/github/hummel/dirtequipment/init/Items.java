@@ -4,9 +4,6 @@ import com.github.hummel.dirtequipment.item.*;
 import com.google.common.base.CaseFormat;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.common.crafting.CraftingHelper;
-import net.minecraftforge.common.crafting.IRecipeFactory;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 import java.util.ArrayList;
@@ -61,7 +58,6 @@ public class Items {
 		String itemName = CaseFormat.LOWER_CAMEL.to(CaseFormat.LOWER_UNDERSCORE, name);
 		item.setTranslationKey(itemName);
 		item.setRegistryName(itemName);
-		CraftingHelper.register(new ResourceLocation("dirtequipment", itemName), (IRecipeFactory) (context, json) -> CraftingHelper.getRecipe(json, context));
 		ForgeRegistries.ITEMS.register(item);
 		CONTENT.add(item);
 	}
