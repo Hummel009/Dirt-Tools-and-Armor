@@ -1,6 +1,7 @@
 package com.github.hummel.dirtequipment.proxy;
 
-public class DTACommonProxy {
+public class ServerProxy implements CommonProxy {
+	@Override
 	public void onInit() {
 	}
 }
