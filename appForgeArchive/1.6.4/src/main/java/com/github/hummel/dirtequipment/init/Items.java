@@ -1,5 +1,6 @@
 package com.github.hummel.dirtequipment.init;
 
+import com.github.hummel.dirtequipment.Config;
 import com.github.hummel.dirtequipment.item.*;
 import com.google.common.base.CaseFormat;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -23,17 +24,17 @@ public class Items {
 	}
 
 	public static void preInit() {
-		dirtSword = new ItemDirtSword();
+		dirtSword = new ItemDirtSword(Config.idDirtSword - 256);
 
-		dirtHelmet = new ItemDirtArmor(0);
-		dirtChestplate = new ItemDirtArmor(1);
-		dirtLeggings = new ItemDirtArmor(2);
-		dirtBoots = new ItemDirtArmor(3);
+		dirtHelmet = new ItemDirtArmor(Config.idDirtHelmet - 256, 0);
+		dirtChestplate = new ItemDirtArmor(Config.idDirtChestplate - 256, 1);
+		dirtLeggings = new ItemDirtArmor(Config.idDirtLeggings - 256, 2);
+		dirtBoots = new ItemDirtArmor(Config.idDirtBoots - 256, 3);
 
-		dirtShovel = new ItemDirtShovel();
-		dirtPickaxe = new ItemDirtPickaxe();
-		dirtAxe = new ItemDirtAxe();
-		dirtHoe = new ItemDirtHoe();
+		dirtShovel = new ItemDirtShovel(Config.idDirtShovel - 256);
+		dirtPickaxe = new ItemDirtPickaxe(Config.idDirtPickaxe - 256);
+		dirtAxe = new ItemDirtAxe(Config.idDirtAxe - 256);
+		dirtHoe = new ItemDirtHoe(Config.idDirtHoe - 256);
 
 		register(dirtSword, "dirtSword");
 
