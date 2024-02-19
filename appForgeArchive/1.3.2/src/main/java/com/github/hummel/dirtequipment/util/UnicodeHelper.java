@@ -1,4 +1,4 @@
-package com.github.hummel.dirtequipment;
+package com.github.hummel.dirtequipment.util;
 
 import com.google.common.base.Charsets;
 import cpw.mods.fml.common.registry.LanguageRegistry;
@@ -9,8 +9,8 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.Properties;
 
-public class DTALang {
-	private DTALang() {
+public class UnicodeHelper {
+	private UnicodeHelper() {
 	}
 
 	public static void loadLocalization(LanguageRegistry registry, String langFile, String langName) {
@@ -34,6 +34,7 @@ public class DTALang {
 					inputStream.close();
 				}
 			} catch (IOException e) {
+				e.printStackTrace();
 			}
 		}
 	}
