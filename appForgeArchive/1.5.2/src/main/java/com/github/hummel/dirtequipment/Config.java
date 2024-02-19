@@ -7,7 +7,7 @@ import net.minecraftforge.common.Configuration;
 import java.util.logging.Level;
 
 @SuppressWarnings("PublicField")
-public class DTAConfig {
+public class Config {
 	private static Configuration configuration;
 
 	private static boolean loaded;
@@ -24,7 +24,7 @@ public class DTAConfig {
 	public static int idDirtAxe;
 	public static int idDirtHoe;
 
-	private DTAConfig() {
+	private Config() {
 	}
 
 	public static void preInit(FMLPreInitializationEvent event) {
