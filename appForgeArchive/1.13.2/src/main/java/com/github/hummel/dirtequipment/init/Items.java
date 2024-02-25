@@ -14,8 +14,8 @@ public class Items {
 	public static Item dirtChestplate;
 	public static Item dirtLeggings;
 	public static Item dirtBoots;
-	public static Item dirtShovel;
 
+	public static Item dirtShovel;
 	public static Item dirtPickaxe;
 	public static Item dirtAxe;
 	public static Item dirtHoe;
