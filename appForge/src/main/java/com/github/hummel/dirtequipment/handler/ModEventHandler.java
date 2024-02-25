@@ -14,6 +14,7 @@ public class ModEventHandler {
 	public void addCreativeTab(BuildCreativeModeTabContentsEvent event) {
 		if (event.getTabKey() == CreativeModeTabs.COMBAT) {
 			event.getEntries().putAfter(new ItemStack(Items.NETHERITE_SWORD), new ItemStack(DIRT_SWORD.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
 			event.getEntries().putAfter(new ItemStack(Items.NETHERITE_BOOTS), new ItemStack(DIRT_BOOTS.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
 			event.getEntries().putAfter(new ItemStack(Items.NETHERITE_BOOTS), new ItemStack(DIRT_LEGGINGS.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
 			event.getEntries().putAfter(new ItemStack(Items.NETHERITE_BOOTS), new ItemStack(DIRT_CHESTPLATE.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
