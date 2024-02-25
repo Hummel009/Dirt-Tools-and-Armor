@@ -14,6 +14,6 @@ public class ItemDirtArmor extends ItemArmor implements IArmorTextureProvider {
 
 	@Override
 	public String getArmorTextureFile(ItemStack itemStack) {
-		return "dirtequipment:textures/models/armor/dirt_layer_" + (armorType == 2 ? 2 : 1) + ".png";
+		return "/assets/dirtequipment/textures/models/armor/dirt_layer_" + (armorType == 2 ? 2 : 1) + ".png";
 	}
 }
