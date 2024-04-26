@@ -1,6 +1,7 @@
 package com.github.hummel.dirtequipment;
 
 import com.github.hummel.dirtequipment.handler.ModEventHandler;
+import com.github.hummel.dirtequipment.init.ArmorMaterials;
 import com.github.hummel.dirtequipment.init.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -14,5 +15,6 @@ public class Main {
 		modEventBus.register(modEventHandler);
 
 		Items.register(modEventBus);
+		ArmorMaterials.register(modEventBus);
 	}
 }

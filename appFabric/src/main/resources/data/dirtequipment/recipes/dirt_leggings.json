@@ -12,7 +12,7 @@
 		}
 	},
 	"result": {
-		"item": "dirtequipment:dirt_leggings",
+		"id": "dirtequipment:dirt_leggings",
 		"count": 1
 	}
 }

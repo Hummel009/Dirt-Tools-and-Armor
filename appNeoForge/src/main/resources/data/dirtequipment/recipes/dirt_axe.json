@@ -15,7 +15,7 @@
 		}
 	},
 	"result": {
-		"item": "dirtequipment:dirt_axe",
+		"id": "dirtequipment:dirt_axe",
 		"count": 1
 	}
 }

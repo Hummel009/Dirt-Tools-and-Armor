@@ -5,6 +5,6 @@ import net.minecraft.world.item.HoeItem;
 
 public class ItemDirtHoe extends HoeItem {
 	public ItemDirtHoe() {
-		super(ToolMaterials.DIRT, -3, 0.0f, new Properties());
+		super(ToolMaterials.DIRT, new Properties().attributes(createAttributes(ToolMaterials.DIRT, -3.0f, 0.0f)));
 	}
 }

@@ -5,6 +5,6 @@ import net.minecraft.world.item.SwordItem;
 
 public class ItemDirtSword extends SwordItem {
 	public ItemDirtSword() {
-		super(ToolMaterials.DIRT, 3, -2.4f, new Properties());
+		super(ToolMaterials.DIRT, new Properties().attributes(createAttributes(ToolMaterials.DIRT, 3, -2.4f)));
 	}
 }

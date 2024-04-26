@@ -12,7 +12,7 @@
 		}
 	},
 	"result": {
-		"item": "dirtequipment:dirt_chestplate",
+		"id": "dirtequipment:dirt_chestplate",
 		"count": 1
 	}
 }
