@@ -10,7 +10,7 @@ import net.minecraft.util.SoundEvent;
 public enum ArmorMaterials implements IArmorMaterial {
 	DIRT("dirt", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 2.0f, Ingredient.fromItems(Blocks.DIRT));
 
-	private static final int[] DURABILITY = new int[]{13, 15, 16, 11};
+	private static final int[] DURABILITY = {13, 15, 16, 11};
 	private final String name;
 	private final int maxDamageFactor;
 	private final int[] damageReductionAmount;

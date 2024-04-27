@@ -22,6 +22,7 @@ public class Items {
 	private Items() {
 	}
 
+	@SuppressWarnings("ValueOfIncrementOrDecrementUsed")
 	public static void preInit() {
 		dirtSword = new ItemDirtSword(Config.idDirtSword - 256);
 
