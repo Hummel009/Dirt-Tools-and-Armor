@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class ItemDirtArmor extends ArmorItem {
 	public ItemDirtArmor(Type type) {
-		super(ArmorMaterials.DIRT.getHolder().orElseThrow(), type, new Properties().durability(type.getDurability(33)));
+		super(ArmorMaterials.DIRT, type, new Properties().durability(type.getDurability(33)));
 	}
 
 	@Override
