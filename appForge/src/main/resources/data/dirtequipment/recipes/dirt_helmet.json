@@ -11,7 +11,7 @@
 		}
 	},
 	"result": {
-		"item": "dirtequipment:dirt_helmet",
+		"id": "dirtequipment:dirt_helmet",
 		"count": 1
 	}
 }

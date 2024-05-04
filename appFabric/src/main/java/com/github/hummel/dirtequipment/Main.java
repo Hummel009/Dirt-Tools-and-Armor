@@ -1,6 +1,7 @@
 package com.github.hummel.dirtequipment;
 
 import com.github.hummel.dirtequipment.handler.FabricEventHandler;
+import com.github.hummel.dirtequipment.init.ArmorMaterials;
 import com.github.hummel.dirtequipment.init.Items;
 import net.fabricmc.api.ModInitializer;
 
@@ -9,6 +10,7 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ArmorMaterials.forceClassLoad();
 		Items.register();
 
 		FabricEventHandler.handle();

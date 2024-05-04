@@ -11,7 +11,7 @@
 		}
 	},
 	"result": {
-		"item": "dirtequipment:dirt_boots",
+		"id": "dirtequipment:dirt_boots",
 		"count": 1
 	}
 }

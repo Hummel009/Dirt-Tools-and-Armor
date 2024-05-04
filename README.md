@@ -19,7 +19,7 @@ Dirt Tools and Armor - простенький мод, о котором мечт
 | 1.13.2 - 1.16.5  | 8.7    | ForgeGradle 6.X; FabricLoom            | 21.0.3     | 21.0.3      | 1.8.0_412     | 8      |
 | 1.17.1           | 8.7    | ForgeGradle 6.X; FabricLoom            | 21.0.3     | 21.0.3      | 16.0.2        | 16     |
 | 1.18.2 - 1.19.4  | 8.7    | ForgeGradle 6.X; FabricLoom            | 21.0.3     | 21.0.3      | 17.0.9        | 17     |
-| 1.20.5 и новее   | 8.7    | ForgeGradle 6.X; FabricLoom; NeoGradle | 21.0.3     | 21.0.3      | 21.0.3        | 21     |
+| 1.20.6 и новее   | 8.7    | ForgeGradle 6.X; FabricLoom; NeoGradle | 21.0.3     | 21.0.3      | 21.0.3        | 21     |
 
 ### Примечания к таблице
 

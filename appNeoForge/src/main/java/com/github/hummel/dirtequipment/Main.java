@@ -14,7 +14,7 @@ public class Main {
 		var modEventHandler = new ModEventHandler();
 		modEventBus.register(modEventHandler);
 
-		Items.register(modEventBus);
 		ArmorMaterials.register(modEventBus);
+		Items.register(modEventBus);
 	}
 }

@@ -15,7 +15,7 @@
 		}
 	},
 	"result": {
-		"item": "dirtequipment:dirt_pickaxe",
+		"id": "dirtequipment:dirt_pickaxe",
 		"count": 1
 	}
 }

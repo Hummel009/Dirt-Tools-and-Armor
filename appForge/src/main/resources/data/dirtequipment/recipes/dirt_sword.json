@@ -15,7 +15,7 @@
 		}
 	},
 	"result": {
-		"item": "dirtequipment:dirt_sword",
+		"id": "dirtequipment:dirt_sword",
 		"count": 1
 	}
 }
