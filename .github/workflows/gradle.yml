@@ -9,7 +9,7 @@ on:
 permissions:
   contents: read
 jobs:
-  build_repo:
+  build-current:
     runs-on: windows-latest
     strategy:
       matrix:
@@ -28,11 +28,11 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew :${{matrix.version}}:build
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@main
         with:
-          name: current-version
+          name: current-${{matrix.version}}
           path: ./${{matrix.version}}/build/libs/*.jar
-  build_forge_archive:
+  build-forge-archive:
     runs-on: windows-latest
     strategy:
       matrix:
@@ -52,11 +52,11 @@ jobs:
         working-directory: ./appForgeArchive
         run: ./gradlew :${{matrix.version}}:build
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@main
         with:
-          name: archive-forge
+          name: archive-forge-${{matrix.version}}
           path: ./appForgeArchive/${{matrix.version}}/build/libs/*.jar
-  build_forge_archive_legacy:
+  build-forge-archive-legacy:
     runs-on: windows-latest
     strategy:
       matrix:
@@ -76,11 +76,11 @@ jobs:
         working-directory: ./appForgeArchive/${{matrix.version}}
         run: ./gradlew build
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@main
         with:
-          name: archive-forge
+          name: archive-forge-${{matrix.version}}
           path: ./appForgeArchive/${{matrix.version}}/build/libs/*.jar
-  build_fabric_archive:
+  build-fabric-archive:
     runs-on: windows-latest
     strategy:
       matrix:
@@ -100,7 +100,38 @@ jobs:
         working-directory: ./appFabricArchive
         run: ./gradlew :${{matrix.version}}:build
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@main
+        with:
+          name: archive-fabric-${{matrix.version}}
+          path: ./appFabricArchive/${{matrix.version}}/build/libs/*.jar
+          
+  merge-current:
+    runs-on: windows-latest
+    needs: [ build-forge-archive, build-forge-archive-legacy ]
+    steps:
+      - name: Merge Artifacts
+        uses: actions/upload-artifact/merge@main
+        with:
+          name: current
+          pattern: current-*
+          delete-merged: true
+  merge-forge-archive:
+    runs-on: windows-latest
+    needs: [ build-forge-archive, build-forge-archive-legacy ]
+    steps:
+      - name: Merge Artifacts
+        uses: actions/upload-artifact/merge@main
+        with:
+          name: archive-forge
+          pattern: archive-forge-*
+          delete-merged: true
+  merge-fabric-archive:
+    runs-on: windows-latest
+    needs: build-fabric-archive
+    steps:
+      - name: Merge Artifacts
+        uses: actions/upload-artifact/merge@main
         with:
           name: archive-fabric
-          path: ./appFabricArchive/${{matrix.version}}/build/libs/*.jar
+          pattern: archive-fabric-*
+          delete-merged: true
