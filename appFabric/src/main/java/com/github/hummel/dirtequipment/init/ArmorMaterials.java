@@ -30,7 +30,4 @@ public class ArmorMaterials {
 		map.put(ArmorItem.Type.BODY, protection[4]);
 		return Registry.registerForHolder(BuiltInRegistries.ARMOR_MATERIAL, new ResourceLocation(name), new ArmorMaterial(map, i, holder, () -> ingredient, List.of(new ArmorMaterial.Layer(new ResourceLocation(name))), f, g));
 	}
-
-	public static void forceClassLoad() {
-	}
 }

@@ -7,6 +7,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class ModEventHandler {
 	@SubscribeEvent
+	@SuppressWarnings("MethodMayBeStatic")
 	public void onItemRegistry(RegistryEvent.Register<Item> event) {
 		Items.register();
 	}

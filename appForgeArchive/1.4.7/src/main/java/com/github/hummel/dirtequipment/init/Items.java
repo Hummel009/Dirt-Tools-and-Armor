@@ -23,7 +23,7 @@ public class Items {
 	private Items() {
 	}
 
-	@SuppressWarnings("ValueOfIncrementOrDecrementUsed")
+	@SuppressWarnings({"ValueOfIncrementOrDecrementUsed", "UnusedAssignment"})
 	public static void preInit() {
 		dirtSword = new ItemDirtSword(Config.idDirtSword - 256);
 
@@ -46,7 +46,7 @@ public class Items {
 		dirtLeggings.setIconIndex(id++);
 		dirtPickaxe.setIconIndex(id++);
 		dirtShovel.setIconIndex(id++);
-		dirtSword.setIconIndex(id);
+		dirtSword.setIconIndex(id++);
 
 		register(dirtSword, "dirtSword");
 

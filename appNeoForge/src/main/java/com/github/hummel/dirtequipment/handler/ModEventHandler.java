@@ -11,6 +11,7 @@ import static com.github.hummel.dirtequipment.init.Items.*;
 
 public class ModEventHandler {
 	@SubscribeEvent
+	@SuppressWarnings("MethodMayBeStatic")
 	public void addCreativeTab(BuildCreativeModeTabContentsEvent event) {
 		if (event.getTabKey() == CreativeModeTabs.COMBAT) {
 			event.getEntries().putAfter(new ItemStack(Items.NETHERITE_SWORD), new ItemStack(DIRT_SWORD.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);

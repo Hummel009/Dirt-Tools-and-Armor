@@ -50,7 +50,7 @@ public class Config {
 			idDirtAxe = configuration.get("item", "Dirt Axe", 927).getInt(927);
 			idDirtHoe = configuration.get("item", "Dirt Hoe", 928).getInt(928);
 		} catch (Exception e) {
-			FMLLog.log(Level.SEVERE, e, "DTA has a problem loading it's configuration");
+			FMLLog.log(Level.SEVERE, e, "Mod has a problem loading it's configuration");
 		} finally {
 			configuration.save();
 			loaded = true;
