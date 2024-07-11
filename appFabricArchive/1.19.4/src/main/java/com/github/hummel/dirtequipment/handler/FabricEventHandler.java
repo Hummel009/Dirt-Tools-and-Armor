@@ -13,6 +13,7 @@ public class FabricEventHandler {
 	public static void handle() {
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COMBAT).register(populator -> {
 			populator.addAfter(Items.NETHERITE_SWORD, DIRT_SWORD);
+			populator.addAfter(Items.NETHERITE_AXE, DIRT_AXE);
 
 			populator.addAfter(Items.NETHERITE_BOOTS, DIRT_BOOTS);
 			populator.addAfter(Items.NETHERITE_BOOTS, DIRT_LEGGINGS);

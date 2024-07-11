@@ -1,0 +1,25 @@
+modLoader = "javafml"
+loaderVersion = "[0,)"
+license = "GPL-3.0-only"
+logoFile = "logo.png"
+
+[[mods]]
+modId = "dirtequipment"
+version = "24.07.19"
+displayName = "Dirt Tools and Armor"
+authors = "Hummel009"
+description = '''This mod adds a set of tools and armor made from dirt.'''
+
+[[dependencies.dirtequipment]]
+modId = "forge"
+mandatory = true
+versionRange = "[0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.dirtequipment]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.6]"
+ordering = "NONE"
+side = "BOTH"

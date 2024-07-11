@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"DD",
+		" /",
+		" /"
+	],
+	"key": {
+		"D": {
+			"item": "minecraft:dirt",
+			"data": 0
+		},
+		"/": {
+			"item": "minecraft:stick"
+		}
+	},
+	"result": {
+		"id": "dirtequipment:dirt_hoe",
+		"count": 1
+	}
+}

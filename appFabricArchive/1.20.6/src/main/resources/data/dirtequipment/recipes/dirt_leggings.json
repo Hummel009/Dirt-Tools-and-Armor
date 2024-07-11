@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"DDD",
+		"D D",
+		"D D"
+	],
+	"key": {
+		"D": {
+			"item": "minecraft:dirt",
+			"data": 0
+		}
+	},
+	"result": {
+		"id": "dirtequipment:dirt_leggings",
+		"count": 1
+	}
+}

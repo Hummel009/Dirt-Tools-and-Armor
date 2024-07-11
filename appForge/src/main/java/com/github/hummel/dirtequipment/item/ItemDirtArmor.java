@@ -15,6 +15,6 @@ public class ItemDirtArmor extends ArmorItem {
 
 	@Override
 	public ResourceLocation getArmorTexture(ItemStack itemStack, Entity entity, EquipmentSlot equipmentSlot, ArmorMaterial.Layer layer, boolean innerModel) {
-		return new ResourceLocation("dirtequipment:textures/models/armor/dirt_layer_" + (equipmentSlot == EquipmentSlot.LEGS ? 2 : 1) + ".png");
+		return ResourceLocation.fromNamespaceAndPath("dirtequipment", "textures/models/armor/dirt_layer_" + (equipmentSlot == EquipmentSlot.LEGS ? 2 : 1) + ".png");
 	}
 }

@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "dirtequipment",
-	"version": "24.05.13",
+	"version": "24.07.19",
 	"name": "Dirt Tools and Armor",
 	"description": "This mod adds a set of tools and armor made from dirt.",
 	"authors": [
@@ -21,7 +21,7 @@
 	},
 	"depends": {
 		"fabricloader": "*",
-		"minecraft": "~1.20.6",
+		"minecraft": "~1.21",
 		"java": ">=21",
 		"fabric-api": "*"
 	}

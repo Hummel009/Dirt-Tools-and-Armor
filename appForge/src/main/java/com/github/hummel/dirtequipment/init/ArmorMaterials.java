@@ -36,6 +36,6 @@ public class ArmorMaterials {
 		map.put(ArmorItem.Type.CHESTPLATE, protection[2]);
 		map.put(ArmorItem.Type.HELMET, protection[3]);
 		map.put(ArmorItem.Type.BODY, protection[4]);
-		return new ArmorMaterial(map, i, holder, () -> ingredient, List.of(new ArmorMaterial.Layer(new ResourceLocation(name))), f, g);
+		return new ArmorMaterial(map, i, holder, () -> ingredient, List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath("dirtequipment", name))), f, g);
 	}
 }

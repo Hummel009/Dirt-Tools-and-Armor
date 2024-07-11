@@ -5,7 +5,7 @@ logoFile = "logo.png"
 
 [[mods]]
 modId = "dirtequipment"
-version = "24.05.13"
+version = "24.07.19"
 displayName = "Dirt Tools and Armor"
 authors = "Hummel009"
 description = '''This mod adds a set of tools and armor made from dirt.'''
@@ -20,6 +20,6 @@ side = "BOTH"
 [[dependencies.dirtequipment]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.20.6]"
+versionRange = "[1.21]"
 ordering = "NONE"
 side = "BOTH"
