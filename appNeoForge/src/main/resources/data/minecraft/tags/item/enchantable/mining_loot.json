@@ -1,0 +1,12 @@
+{
+	"values": [
+		"#minecraft:axes",
+		"#minecraft:pickaxes",
+		"#minecraft:shovels",
+		"#minecraft:hoes",
+		"dirtequipment:dirt_axe",
+		"dirtequipment:dirt_pickaxe",
+		"dirtequipment:dirt_shovel",
+		"dirtequipment:dirt_hoe"
+	]
+}

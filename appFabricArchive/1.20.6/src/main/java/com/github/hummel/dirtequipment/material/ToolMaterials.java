@@ -1,14 +1,14 @@
 package com.github.hummel.dirtequipment.material;
 
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
 public enum ToolMaterials implements Tier {
-	DIRT(Tiers.DIAMOND.getIncorrectBlocksForDrops(), 1561, 8.0f, 3.0f, 10, Ingredient.of(Blocks.DIRT));
+	DIRT(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1561, 8.0f, 3.0f, 10, Ingredient.of(Blocks.DIRT));
 
 	private final TagKey<Block> incorrectBlocksForDrops;
 	private final int uses;
