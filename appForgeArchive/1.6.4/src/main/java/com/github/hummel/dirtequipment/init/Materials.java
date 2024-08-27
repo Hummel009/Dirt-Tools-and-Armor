@@ -1,7 +1,9 @@
 package com.github.hummel.dirtequipment.init;
 
 import net.minecraft.block.Block;
-import net.minecraft.item.*;
+import net.minecraft.item.EnumArmorMaterial;
+import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.EnumHelper;
 
 @SuppressWarnings("WeakerAccess")
