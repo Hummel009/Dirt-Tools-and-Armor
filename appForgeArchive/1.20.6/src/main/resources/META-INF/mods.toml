@@ -5,7 +5,7 @@ logoFile = "logo.png"
 
 [[mods]]
 modId = "dirtequipment"
-version = "24.08.29"
+version = "24.10.09"
 displayName = "Dirt Tools and Armor"
 authors = "Hummel009"
 description = '''This mod adds a set of tools and armor made from dirt.'''

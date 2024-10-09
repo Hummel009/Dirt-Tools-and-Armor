@@ -16,8 +16,8 @@ Dirt Tools and Armor - простенький мод, о котором мечт
 | Версия Minecraft | Gradle | Плагин сборки                          | Gradle JDK | Project JDK | Syntax |
 |------------------|--------|----------------------------------------|------------|-------------|--------|
 | 1.3.2 - 1.6.4    | 8.10.2 | Voldeloom                              | 21         | 11          | 6      |
-| 1.7.10, 1.12.2   | 8.10.2 | RetroFuturaGradle                      | 21         | 8           | 8      |
-| 1.8.9 - 1.11.2   | 8.10.2 | Essential Loom                         | 21         | 8           | 8      |
+| 1.7.10           | 8.10.2 | RetroFuturaGradle                      | 21         | 8           | 8      |
+| 1.8.9 - 1.12.2   | 8.10.2 | Essential Loom                         | 21         | 8           | 8      |
 | 1.13.2 - 1.16.5  | 8.10.2 | ForgeGradle 6.X; FabricLoom            | 21         | 8           | 8      |
 | 1.17.1           | 8.10.2 | ForgeGradle 6.X; FabricLoom            | 21         | 16          | 16     |
 | 1.18.2 - 1.19.4  | 8.10.2 | ForgeGradle 6.X; FabricLoom            | 21         | 17          | 17     |
