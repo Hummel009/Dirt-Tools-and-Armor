@@ -20,7 +20,7 @@ import java.util.List;
 public class ArmorMaterials {
 	public static final DeferredRegister<ArmorMaterial> REGISTRY = DeferredRegister.create(Registries.ARMOR_MATERIAL, "dirtequipment");
 
-	public static final RegistryObject<ArmorMaterial> DIRT = REGISTRY.register("dirt", () -> material("dirt", new int[]{3, 6, 8, 3, 11}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0f, 0.0f, Ingredient.of(Items.DIRT)));
+	public static final RegistryObject<ArmorMaterial> DIRT = REGISTRY.register("dirt", () -> material("dirt", new int[]{3, 6, 8, 3, 11}, 10, SoundEvents.ARMOR_EQUIP_LEATHER, 2.0f, 0.0f, Ingredient.of(Items.DIRT)));
 
 	private ArmorMaterials() {
 	}

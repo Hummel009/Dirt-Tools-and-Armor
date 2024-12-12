@@ -16,7 +16,7 @@ import java.util.List;
 
 @SuppressWarnings("WeakerAccess")
 public class ArmorMaterials {
-	public static final Holder<ArmorMaterial> DIRT = register("dirt", new int[]{3, 6, 8, 3, 11}, 10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2.0f, 0.0f, Ingredient.of(Items.DIRT));
+	public static final Holder<ArmorMaterial> DIRT = register("dirt", new int[]{3, 6, 8, 3, 11}, 10, SoundEvents.ARMOR_EQUIP_LEATHER, 2.0f, 0.0f, Ingredient.of(Items.DIRT));
 
 	private ArmorMaterials() {
 	}
